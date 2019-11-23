@@ -11,7 +11,17 @@ let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  if (!showMenu) {
+  menuBtn.classList.toggle("close");
+  menu.classList.toggle("show");
+  menuNav.classList.toggle("show");
+  menuBranding.classList.toggle("show");
+  navItems.forEach(item => item.classList.toggle("show"));
+  //Reset Menu State
+  showMenu = !showMenu;
+}
+
+/*
+if (!showMenu) {
     menuBtn.classList.add("close");
     menu.classList.add("show");
     menuNav.classList.add("show");
@@ -28,4 +38,4 @@ function toggleMenu() {
     //Reset Menu State
     showMenu = false;
   }
-}
+*/
