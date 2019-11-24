@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.95;
+  opacity: 0.97;
   visibility: hidden;
 
   &.show {
@@ -64,7 +64,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: $primary-color, $amount: 6);
+    background: rgba(darken($color: $primary-color, $amount: 6), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
