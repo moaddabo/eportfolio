@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -89,7 +89,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.png");
+      background: url("../resources/img/portrait.png");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -117,7 +117,7 @@
     padding: 10px 0;
     font-weight: 100;
     text-decoration: none;
-    color: white;
+    color: set-text-color($primary-color);
     @include easeOut;
 
     &:hover {
@@ -127,7 +127,7 @@
 }
 
 //Delay each nav item slide by 0.1s
-@for $x from 1 to 4 {
+@for $x from 1 to 6 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
